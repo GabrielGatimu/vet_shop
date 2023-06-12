@@ -153,6 +153,7 @@ header > .hamburger {
   max-width: 100%;
   padding: 20px 8%;
   overflow-x: hidden;
+  margin-bottom: 80px;
 }
 .section > .container {
   height: 100%;
@@ -661,6 +662,13 @@ footer > .copyright {
     position: absolute;
     opacity: 0.05;
     z-index: -1;
+  }
+  #testimonials > .container {
+    flex-direction: column;
+  }
+  #testimonials > .container > .testimonial {
+    width: 100%;
+    margin-bottom: 8%;
   }
   footer > .row,
   #footer-head {
