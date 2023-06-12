@@ -67,3 +67,18 @@ document.querySelectorAll(".nav-link").forEach(n => {
     })
 })
 
+// --- hide navbar --- //
+var lastScrollTop
+
+var navbar = document.getElementById('navbar')
+
+window.addEventListener('scroll', function () {
+    var scrollTop = window.pageYOffset || document.doctype.scrollTop
+
+    if (scrollTop > lastScrollTop) {
+        navbar.style.top = '-90px'
+    } else {
+        navbar.style.top = '0'
+    }
+    lastScrollTop = scrollTop
+})
