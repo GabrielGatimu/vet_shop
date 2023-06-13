@@ -1,56 +1,56 @@
 let heading = document.getElementById('home-text');
 let description = document.getElementById('home-description');
 let img = document.getElementById('actual-image');
-if (heading != null && description != null && img != null) {
-    let headings = [
-        {
-            title: "Unleash ",
-            subtitle: "Optimal Care: ",
-            title2: "Where Health Meets Hooves, Paws, and Whiskers"
-        },
-        {
-            title: "Care for Your Beloved ",
-            subtitle: "Pets",
-            title2: ""
-        },
-        {
-            title: "Expert Care for ",
-            subtitle: "Cattle, Sheep, and Goats",
-            title2: ""
-        }
-    ];
 
-    let descriptions = [
-        `From cats and dogs to exotic pets and farm animals, we provide comprehensive care for every all.`,
-        `Experience top-notch veterinary services at our state-of-the-art clinic. We are dedicated to ensuring the health and happiness of your furry companions. Our team of experienced professionals is committed to providing the highest level of care for every pet that walks through our doors.`,
-        `Specialized in providing expert care for cattle, sheep, and goats. From routine check-ups to advanced medical treatments, our experienced veterinarians are dedicated to ensuring the health and well-being of your livestock.`
-    ];
-
-    let images = ['./images/home-images/IMG-20171017-WA0008.jpg', './images/home-images/cat_and_dog.avif', './images/gallery-images/dairycow.jpg'];
-
-    // -- preloading the images -- //
-    let imageObjects = []
-    for (let i = 0; i < images.length; i++) {
-        let imageObj = new Image()
-        imageObj.src = images[i]
-        imageObjects.push(imageObj)
+let headings = [
+    {
+        title: "Unleash ",
+        subtitle: "Optimal Care: ",
+        title2: "Where Health Meets Hooves, Paws, and Whiskers"
+    },
+    {
+        title: "Care for Your Beloved ",
+        subtitle: "Pets",
+        title2: ""
+    },
+    {
+        title: "Expert Care for ",
+        subtitle: "Cattle, Sheep, and Goats",
+        title2: ""
     }
+];
 
-    let counter = 0;
+let descriptions = [
+    `From cats and dogs to exotic pets and farm animals, we provide comprehensive care for every all.`,
+    `Experience top-notch veterinary services at our state-of-the-art clinic. We are dedicated to ensuring the health and happiness of your furry companions.`,
+    `Specialized in providing expert care for cattle, sheep, and goats. Get routine check-ups and advanced medical treatments.`
+];
 
-    const changeContent = () => {
-        if (counter >= images.length) {
-            counter = 0
-        }
-        heading.innerHTML = `<h3>${headings[counter].title}<span>${headings[counter].subtitle}</span>${headings[counter].title2}</h3>`;
-        description.innerHTML = descriptions[counter];
-        img.src = images[counter]
+let images = ['./images/home-images/IMG-20171017-WA0008.jpg', './images/home-images/cat_and_dog.avif', './images/gallery-images/dairycow.jpg'];
 
-        counter++
-        setTimeout(changeContent, 7000)
-    }
-
+// -- preloading the images -- //
+let imageObjects = []
+for (let i = 0; i < images.length; i++) {
+    let imageObj = new Image()
+    imageObj.src = images[i]
+    imageObjects.push(imageObj)
 }
+
+let counter = 0;
+
+const changeContent = () => {
+    if (counter >= images.length) {
+        counter = 0
+    }
+    heading.innerHTML = `<h3>${headings[counter].title}<span>${headings[counter].subtitle}</span>${headings[counter].title2}</h3>`;
+    description.innerHTML = descriptions[counter];
+    img.src = images[counter]
+
+    counter++
+    setTimeout(changeContent, 7000)
+}
+
+
 
 
 // --- Hamburger Menu
