@@ -352,43 +352,6 @@ header > .hamburger {
 }
 /* -- END of Image Container -- */
 
-/* Gallery Section */
-#gallery-section {
-  max-height: 100vh;
-  overflow: hidden;
-  padding: 0 2% 4% 2%;
-}
-#gallery-section > #gallery {
-  max-height: 100%;
-  display: flex;
-  column-gap: 4px;
-}
-#gallery-section > #gallery > .gallery-image {
-  flex-basis: 20%;
-  border-radius: 10px;
-}
-#gallery-section > #gallery > .gallery-image > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: 0.5s ease;
-}
-#gallery-section > #gallery > .gallery-image > img:hover {
-  transform: scale(1.2);
-}
-#gallery-section > #gallery > .small-image {
-  margin-top: 20vh;
-  height: 48vh;
-}
-#gallery-section > #gallery > .two-image {
-  flex-direction: column;
-  margin: 24px 0;
-}
-#gallery-section > #gallery > .two-image > img {
-  height: 49%;
-}
-/* END of Gallery Section */
 /* Testimonials */
 #testimonials {
   background: var(--third-color);
@@ -744,9 +707,6 @@ footer > .copyright {
     position: absolute;
     opacity: 0.2;
     z-index: -1;
-  }
-  #gallery-section > #gallery > .gallery-image > img {
-    width: 80%;
   }
   #testimonials > .container {
     flex-direction: column;
