@@ -15,6 +15,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="./script.js" defer></script>
     </head>
     <body onload="changeContent()">
         <!-- header -->
@@ -103,261 +104,337 @@
                 <span onclick="goToSection(2)" class="dot active"></span>
             </div>
         </section>
-        <!-- Gallery -->
-        <section class="section" id="gallery-section">
-            <h1>Picture-Perfect-Care</h1>
-            <h1>Unveiling Our Veterinary Gallery</h1>
-            <br>
-            <div class="container" id="gallery">
-                <div class="gallery-image small-image">
-                    <img src="./images/gallery-images/DSCN0989.JPG" alt="">
-                </div>
-                <div class="gallery-image two-image">
-                    <img src="./images/gallery-images/Tools.jpg" alt="" srcset="">
-                    <img src="./images/gallery-images/DSCN0979.JPG" alt="" srcset="">
-                </div>
-                <div class="gallery-image big-image">
-                    <img src="./images/gallery-images/Eric_dog_1.jpg" alt="" srcset="">
-                </div>
-                <div class="gallery-image two-image">
-                    <img src="./images/gallery-images/g6.jpg" alt="" srcset="">
-                    <img src="./images/gallery-images/IMG_20230109_144613_965.jpg" alt="" srcset="">
-                </div>
-                <div class="gallery-image small-image">
-                    <img src="./images/gallery-images/IMG_20230316_112119.jpg" alt="" srcset="">
+        <!-- Why Us Section-->
+        <section class="section">
+            <div class="container">
+                <h1>
+                    Who we are
+                </h1>
+                <div class="description">
+                    <p>
+                        Our team truly sets us apart because it's always personal with us. We are passionate, talented, and committed individuals ready to help you with your animal care needs.
+The bond between people and animals is magical and we aim to make it even better at My Vet. Your animal's health care is our top priority. Get an appointment with one of our veterinarians today.-
+                    </p>
                 </div>
             </div>
         </section>
-        <!-- Testimonials -->
-        <section class="section" id="testimonials">
-            <h2> What Our Clients Say</h2>
-            <div class="container">
-                <div class="testimonial">
-                    <div class="testimonial-header">
-                        <img
-                            src="./images/logos/Ellipse 23 (1).png"
-                            alt=""
-                            srcset=""
-                            class="profile-picture"
-                        >
-                        <div class="testimonial-header-text">
-                            <h4 id="name">Mulinde</h4>
-                            <h4 id="location">
-                                Machakos, Kenya
-                            </h4>
-                        </div>
-                        <span id="testimonial-quote">"</span>
-                    </div>
-                    <div class="testimonial-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-header">
-                        <img
-                            src="./images/logos/Ellipse 23 (1).png"
-                            alt=""
-                            srcset=""
-                            class="profile-picture"
-                        >
-                        <div class="testimonial-header-text">
-                            <h4 id="name">Mulinde</h4>
-                            <h4 id="location">
-                                Machakos, Kenya
-                            </h4>
-                        </div>
-                        <span id="testimonial-quote">"</span>
-                    </div>
-                    <div class="testimonial-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-header">
-                        <img
-                            src="./images/logos/Ellipse 23 (1).png"
-                            alt=""
-                            srcset=""
-                            class="profile-picture"
-                        >
-                        <div class="testimonial-header-text">
-                            <h4 id="name">Mulinde</h4>
-                            <h4 id="location">
-                                Machakos, Kenya
-                            </h4>
-                        </div>
-                        <span id="testimonial-quote">"</span>
-                    </div>
-                    <div class="testimonial-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!-- Contact us  -->
-            <section class="section" id="contact-section">
-                <h1>
-                    Request a call back
-                </h1>
-                <img src="./images/home-images/client-bg.jpg" alt="" srcset="">
-                <form id="contact-form">
-                    <div class="form-header">
-                        <h3>Contact us</h3>
-                    </div>
-                    <input
-                        type="text"
-                        class="form-input"
-                        name="name"
-                        placeholder="Name..."
-                        required
+        <!-- What we do -->
+        <section class="section">
+            <h1>
+                <span class="stroke"></span>
+                Who we are
+                <span class="stroke"></span>
+            </h1>
+            <div class="header">
+                <div class="dropdown">
+                    <img
+                        src="./images/gallery-images/pet_groomin.jpg.jpg"
+                        alt=""
+                        srcset=""
+                        class="link"
                     >
-                    <br>
-                    <input
-                        type="email"
-                        class="form-input"
-                        name="email"
-                        placeholder="Email..."
-                        required
-                    >
-                    <br>
-                    <input
-                        type="number"
-                        class="form-input"
-                        name="phone"
-                        placeholder="Phone Number..."
-                        required
-                    >
-                    <br>
-                    <textarea
-                        name="message"
-                        class="form-input"
-                        placeholder="leave your message"
-                        id="textarea"
-                        required
-                    ></textarea>
-                    <button type="submit" class="form-btn" id="contact-btn">SEND</button>
-                </form>
-            </section>
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="footer-col" id="footer-head">
-                        <div id="footer-logo">
-                            <img
-                                src="./images/logos/MYVET.KE (4).png"
-                                alt=""
-                                srcset=""
-                                class="logo-img"
-                            >
-                            <h4>
-                                <span> MY-VET</span>
-                            </h4>
-                            <P>Quality Veterinary Services</P>
-                        </div>
-                        <div id="newsletter">
-                            <div id="newsletter-text">
-                                <h3>
-                                    Get our Newsletter
-                                    <div class="underline-text">
-                                        <span></span>
-                                    </div>
-                                </h3>
-                                <p>
-                                    Subscribe to get notified every time something new comes up on MY VET
-                                </p>
-                            </div>
-                            <div id="newsletter-action">
-                                <form action="">
-                                    <input
-                                        required
-                                        type="text"
-                                        name=""
-                                        id="footer-input"
-                                        placeholder="your email"
-                                    >
-                                    <button type="submit" class="form-btn" id="footer-btn">SUBSCRIBE</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="footer-col">
-                        <h3>
-                            Links
-                            <div class="underline-text">
-                                <span></span>
-                            </div>
-                        </h3>
-                        <ul>
-                            <li>
-                                <a href="#home" id="">Home</a>
-                            </li>
-                            <li>
-                                <a href="#about">About us</a>
-                            </li>
-                            <li>
-                                <a href="#why-us">Why-us</a>
-                            </li>
-                            <li>
-                                <a href="#gallery">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h3>
-                            GET IN TOUCH
-                            <div class="underline-text">
-                                <span></span>
-                            </div>
-                        </h3>
-                        <ul id="in-touch">
-                            <li>
-                                <a href="#" class="fa fa-map-marker">   Nairobi, Kenya</a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-phone">   Call +254 712 163 376</a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-envelope">   mail@myvet.co.ke</a>
-                            </li>
-                        </ul>
-                        <div class="socials">
-                            <a href="#" class="fa fa-whatsapp"></a>
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                        </div>
-                    </div>
-                    <div class="footer-col">
-                        <h3>
-                            PETSTOP
-                            <div class="underline-text">
-                                <span></span>
-                            </div>
-                        </h3>
-                        <ul>
-                            <li>Pet and farm accessories</li>
-                            <li>Animal feeds and drugs</li>
-                            <li>Consulation</li>
-                            <li>Vaccination</li>
-                            <li>Training</li>
-                            <li>Spray & Neuter</li>
-                            <li>Ambulatory services</li>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li> numn1 groomm</li>
+                            <li> numn1</li>
+                            <li> numn1</li>
                         </ul>
                     </div>
                 </div>
-                <hr>
-                <p class="copyright">My-Vet @2023</p>
-            </footer>
-            <script src="./index.js"></script>
-        </body>
-    </html>
+                <div class="dropdown">
+                    <img
+                        src="./images/gallery-images/pet_groomin.jpg.jpg"
+                        alt=""
+                        srcset=""
+                        class="link"
+                    >
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li> numn1 groomm</li>
+                            <li> numn1</li>
+                            <li> numn1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img
+                        src="./images/gallery-images/pet_groomin.jpg.jpg"
+                        alt=""
+                        srcset=""
+                        class="link"
+                    >
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li> numn1 groomm</li>
+                            <li> numn1</li>
+                            <li> numn1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery -->
+    <section class="section" id="gallery-section">
+        <h1>Picture-Perfect-Care</h1>
+        <h1>Unveiling Our Veterinary Gallery</h1>
+        <br>
+        <div class="container" id="gallery">
+            <div class="gallery-image small-image">
+                <img src="./images/gallery-images/DSCN0989.JPG" alt="">
+            </div>
+            <div class="gallery-image two-image">
+                <img src="./images/gallery-images/Tools.jpg" alt="" srcset="">
+                <img src="./images/gallery-images/DSCN0979.JPG" alt="" srcset="">
+            </div>
+            <div class="gallery-image big-image">
+                <img src="./images/gallery-images/Eric_dog_1.jpg" alt="" srcset="">
+            </div>
+            <div class="gallery-image two-image">
+                <img src="./images/gallery-images/g6.jpg" alt="" srcset="">
+                <img src="./images/gallery-images/IMG_20230109_144613_965.jpg" alt="" srcset="">
+            </div>
+            <div class="gallery-image small-image">
+                <img src="./images/gallery-images/IMG_20230316_112119.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+        <h1>
+            <span class="stroke"></span>
+            Who we are
+            <span class="stroke"></span>
+        </h1>
+        <div class="container">
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <img
+                        src="./images/logos/Ellipse 23 (1).png"
+                        alt=""
+                        srcset=""
+                        class="profile-picture"
+                    >
+                    <div class="testimonial-header-text">
+                        <h4 id="name">Mulinde</h4>
+                        <h4 id="location">
+                            Machakos, Kenya
+                        </h4>
+                    </div>
+                    <span id="testimonial-quote">"</span>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <img
+                        src="./images/logos/Ellipse 23 (1).png"
+                        alt=""
+                        srcset=""
+                        class="profile-picture"
+                    >
+                    <div class="testimonial-header-text">
+                        <h4 id="name">Mulinde</h4>
+                        <h4 id="location">
+                            Machakos, Kenya
+                        </h4>
+                    </div>
+                    <span id="testimonial-quote">"</span>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <img
+                        src="./images/logos/Ellipse 23 (1).png"
+                        alt=""
+                        srcset=""
+                        class="profile-picture"
+                    >
+                    <div class="testimonial-header-text">
+                        <h4 id="name">Mulinde</h4>
+                        <h4 id="location">
+                            Machakos, Kenya
+                        </h4>
+                    </div>
+                    <span id="testimonial-quote">"</span>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact us  -->
+        <section class="section" id="contact-section">
+            <h1>
+                <span class="stroke"></span>
+                Who we are
+                <span class="stroke"></span>
+            </h1>
+            <img src="./images/home-images/client-bg.jpg" alt="" srcset="">
+            <form id="contact-form">
+                <div class="form-header">
+                    <h3>Contact us</h3>
+                </div>
+                <input
+                    type="text"
+                    class="form-input"
+                    name="name"
+                    placeholder="Name..."
+                    required
+                >
+                <br>
+                <input
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    placeholder="Email..."
+                    required
+                >
+                <br>
+                <input
+                    type="number"
+                    class="form-input"
+                    name="phone"
+                    placeholder="Phone Number..."
+                    required
+                >
+                <br>
+                <textarea
+                    name="message"
+                    class="form-input"
+                    placeholder="leave your message"
+                    id="textarea"
+                    required
+                ></textarea>
+                <button type="submit" class="form-btn" id="contact-btn">SEND</button>
+            </form>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="footer-col" id="footer-head">
+                    <div id="footer-logo">
+                        <img
+                            src="./images/logos/MYVET.KE (4).png"
+                            alt=""
+                            srcset=""
+                            class="logo-img"
+                        >
+                        <h4>
+                            <span> MY-VET</span>
+                        </h4>
+                        <P>Quality Veterinary Services</P>
+                    </div>
+                    <div id="newsletter">
+                        <div id="newsletter-text">
+                            <h3>
+                                Get our Newsletter
+                                <div class="underline-text">
+                                    <span></span>
+                                </div>
+                            </h3>
+                            <p>
+                                Subscribe to get notified every time something new comes up on MY VET
+                            </p>
+                        </div>
+                        <div id="newsletter-action">
+                            <form action="">
+                                <input
+                                    required
+                                    type="text"
+                                    name=""
+                                    id="footer-input"
+                                    placeholder="your email"
+                                >
+                                <button type="submit" class="form-btn" id="footer-btn">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col">
+                    <h3>
+                        Links
+                        <div class="underline-text">
+                            <span></span>
+                        </div>
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#home" id="">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About us</a>
+                        </li>
+                        <li>
+                            <a href="#why-us">Why-us</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>
+                        GET IN TOUCH
+                        <div class="underline-text">
+                            <span></span>
+                        </div>
+                    </h3>
+                    <ul id="in-touch">
+                        <li>
+                            <a href="#" class="fa fa-map-marker">   Nairobi, Kenya</a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-phone">   Call +254 712 163 376</a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-envelope">   mail@myvet.co.ke</a>
+                        </li>
+                    </ul>
+                    <div class="socials">
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>
+                        PETSTOP
+                        <div class="underline-text">
+                            <span></span>
+                        </div>
+                    </h3>
+                    <ul>
+                        <li>Pet and farm accessories</li>
+                        <li>Animal feeds and drugs</li>
+                        <li>Consulation</li>
+                        <li>Vaccination</li>
+                        <li>Training</li>
+                        <li>Spray & Neuter</li>
+                        <li>Ambulatory services</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">My-Vet @2023</p>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
