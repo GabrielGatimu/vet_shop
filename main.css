@@ -354,13 +354,11 @@ header > .hamburger {
 /* -- END of Home Container -- */
 /* Gallery Section */
 #gallery-section {
-  background-color: blue;
   max-height: 100vh;
   overflow: hidden;
   padding: 0 2% 4% 2%;
 }
 #gallery-section > #gallery {
-  background-color: beige;
   max-height: 100%;
   display: flex;
   column-gap: 4px;
@@ -374,7 +372,7 @@ header > .hamburger {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  transition: 0.5s ease;
+  transition: 1.2s ease-in-out;
 }
 #gallery-section > #gallery > .gallery-image > img:hover {
   transform: scale(1.2);
@@ -462,9 +460,7 @@ header > .hamburger {
 #contact-section > img {
   max-width: 100%;
   opacity: 0.7;
-  /* aspect-ratio: 3/2; */
   object-fit: contain;
-  /* mix-blend-mode: color-burn; */
 }
 #contact-section > #contact-form {
   position: absolute;
