@@ -350,8 +350,37 @@ header > .hamburger {
     opacity: 1;
   }
 }
-/* -- end of Image Container -- */
-/* -- END of Home Container -- */
+.header {
+  display: flex;
+  column-gap: 50px;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  left: 30%;
+  top: calc(100% - 4rem);
+  background: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.dropdown > .link {
+  max-height: 300px;
+  width: 300px;
+}
+.dropdown > .link:hover + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* END of what wedo */
 /* Gallery Section */
 #gallery-section {
   max-height: 100vh;
@@ -414,7 +443,7 @@ header > .hamburger {
   color: var(--dark-text-color);
   border-radius: 10px;
   margin-right: 12px;
-  box-shadow: 4px 10px 13px var(--second-color);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
   padding-bottom: 4%;
   flex-direction: column;
 }
@@ -468,6 +497,7 @@ header > .hamburger {
   bottom: 45%;
   right: 30%;
   background-color: var(--bg-color);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
   color: var(--dark-text-color);
   padding: 1% 2% 4% 2%;
 }
