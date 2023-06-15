@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My-Vet</title>
         <link rel="icon" href="./images/logos/Ellipse 23 (1).png" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="./main.css">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
         <!-- box icons  -->
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <!-- Font Awesome Icons -->
@@ -27,10 +27,7 @@
                     srcset
                     class="logo-img"
                 >
-                <a href class="logo-text">
-                    My
-                    <span>-Vet</span>
-                </a>
+                <h4>My<span>-Vet</span></h4>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -57,32 +54,30 @@
         </header>
         <!-- Home -->
         <section class="section" id="home">
-            <div class="container home-slider">
-                <div class="text-content">
-                    <h3 id="home-text">
+            <div class="flex-container">
+                <div class="home-text">
+                    <h3 class="title">
                         Unleash
-                        <span>Optimal Care:</span>
+                        <span class="title-span">Optimal Care:</span>
                         Where Health Meets Hooves, Paws, and Whiskers
                     </h3>
-                    <p id="home-description">
+                    <p class="text">
                         From cats and dogs to exotic pets and farm animals,
                         we provide
-                        comprehensive care for every all.
+                        comprehensive care for all.
                     </p>
-                    <div class="buttons">
-                        <a href="#why-us" class="btn">
+                    <div class="home-buttons">
+                        <a href="#why-us" class="btn" >
                             Read More
                             <span class="icons">&#x27F6</span>
                         </a>
-                        <a type="#" class="btn" id="btn-our-work">
-                            <span>
+                        <a href="#" class="play-btn">
                                 <i class="bx bx-play"></i>
                                 Watch Our Work
-                            </span>
-                        </a>
+                                </a>
                     </div>
                 </div>
-                <div class="image-content">
+                <div class="home-images">
                     <div id="image-holder">
                         <img
                             id="actual-image"
@@ -91,194 +86,206 @@
                             srcset=""
                         >
                     </div>
-                    <div id="span-lines">
+                    <div class="span-vectors" id="span-lines">
                         <img src="./images/logos/span-lines.png" alt="" srcset="">
                     </div>
+                    <div class="span-vectors" id="span-dots">
+                        <img src="./images/vectors/span dots.svg" alt="" srcset="">
+                    </div>
+                    <div class="span-vectors" id="polygon">
+                        <img src="./images/vectors/Polygon 1.svg" alt="" srcset="">
+                    </div>
+
                 </div>
             </div>
-            <a class="prev" onclick="changeContent(0)">❮</a>
-            <a class="next" onclick="changeContent(1)">❯</a>
+            <!-- <a class="prev" onclick="changeContent(0)">❮</a>
+            <a class="next" onclick="changeContent(1)">❯</a>-->
             <div class="dot-indicator">
                 <span onclick="goToSection(0)" class="dot active"></span>
                 <span onclick="goToSection(1)" class="dot active"></span>
                 <span onclick="goToSection(2)" class="dot active"></span>
             </div>
         </section>
-        <!-- Why Us Section-->
-        <section class="section">
-            <div class="container">
-                <h1>
-                    Who we are
-                </h1>
-                <div class="description">
-                    <p>
-                        Our team truly sets us apart because it's always personal with us. We are passionate, talented, and committed individuals ready to help you with your animal care needs.
-The bond between people and animals is magical and we aim to make it even better at My Vet. Your animal's health care is our top priority. Get an appointment with one of our veterinarians today.-
-                    </p>
+       
+        <!-- About us -->
+        <section class="section" id="about-us">
+        <div id="us">
+            <h1 class="title">
+                Who we are
+            </h1>                 
+               
+                  <p class="text">
+                            Our team truly sets us apart because it's always personal with us. We are passionate, talented, and committed individuals ready to help you with your animal care needs.
+                            The bond between people and animals is magical and we aim to make it even better at My Vet. Your animal's health care is our top priority. Get an appointment with one of our veterinarians today.-
+                  </p >                            
+        </div>            
+        <div id="our-work">
+            <h1 class="title">
+                <span class="stroke"></span>
+                What we do
+                <span class="stroke"></span>
+            </h1>
+            <div class="flex-container dropdown-container">
+                <div class="dropdown">
+                    <img
+                        src="./images/gallery-images/pet_groomin.jpg.jpg"
+                        alt=""
+                        srcset=""
+                        class="link"
+                    >
+                    <h4>Pet Grooming</h4>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li> numn1 groomm</li>
+                            <li> numn1</li>
+                            <li> numn1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img
+                        src="./images/gallery-images/farm_visit.jpg"
+                        alt=""
+                        srcset=""
+                        class="link"
+                    >
+                    <h4>Farm Visits</h4>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li> numn1 groomm</li>
+                            <li> numn1</li>
+                            <li> numn1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <img
+                        src="./images/gallery-images/Tools.jpg"
+                        alt=""
+                        srcset=""
+                        class="link"
+                    >
+                    <h4>Vaccinations</h4>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li> numn1 groomm</li>
+                            <li> numn1</li>
+                            <li> numn1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Gallery -->
+        <section class="section" id="gallery-section">
+            <h class="title">
+                Picture-Perfect-Care
+                <br>
+                Unveiling Our Veterinary Gallery
+            </h>
+            <hr>
+            <div class="flex-container" id="gallery">
+                <div class="gallery-image small-image">
+                    <img src="./images/gallery-images/DSCN0989.JPG" alt="">
+                </div>
+                <div class="gallery-image two-image">
+                    <img src="./images/gallery-images/Tools.jpg" alt="" srcset="">
+                    <img src="./images/gallery-images/DSCN0979.JPG" alt="" srcset="">
+                </div>
+                <div class="gallery-image big-image">
+                    <img src="./images/gallery-images/Eric_dog_1.jpg" alt="" srcset="">
+                </div>
+                <div class="gallery-image two-image">
+                    <img src="./images/gallery-images/g6.jpg" alt="" srcset="">
+                    <img src="./images/gallery-images/IMG_20230109_144613_965.jpg" alt="" srcset="">
+                </div>
+                <div class="gallery-image small-image">
+                    <img src="./images/gallery-images/IMG_20230316_112119.jpg" alt="" srcset="">
                 </div>
             </div>
         </section>
-        <!-- What we do -->
-        <section class="section">
-            <h1>
+        <!-- Testimonials -->
+        <section class="section" id="testimonial-section">
+            <h1 class="title">
                 <span class="stroke"></span>
-                Who we are
+                What they say about us
                 <span class="stroke"></span>
             </h1>
-            <div class="header">
-                <div class="dropdown">
-                    <img
-                        src="./images/gallery-images/pet_groomin.jpg.jpg"
-                        alt=""
-                        srcset=""
-                        class="link"
-                    >
-                    <div class="dropdown-menu">
-                        <ul class="dropdown-list">
-                            <li> numn1 groomm</li>
-                            <li> numn1</li>
-                            <li> numn1</li>
-                        </ul>
+            <div class="flex-container" id="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img
+                            src="./images/logos/Ellipse 23 (1).png"
+                            alt=""
+                            srcset=""
+                            class="profile-picture"
+                        >
+                        <div class="testimonial-header-text">
+                            <h4 id="name">Mulinde</h4>
+                            <h4 id="location">
+                                Machakos, Kenya
+                            </h4>
+                        </div>
+                        <span id="testimonial-quote">"</span>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
+                        </p>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <img
-                        src="./images/gallery-images/pet_groomin.jpg.jpg"
-                        alt=""
-                        srcset=""
-                        class="link"
-                    >
-                    <div class="dropdown-menu">
-                        <ul class="dropdown-list">
-                            <li> numn1 groomm</li>
-                            <li> numn1</li>
-                            <li> numn1</li>
-                        </ul>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img
+                            src="./images/logos/Ellipse 23 (1).png"
+                            alt=""
+                            srcset=""
+                            class="profile-picture"
+                        >
+                        <div class="testimonial-header-text">
+                            <h4 id="name">Mulinde</h4>
+                            <h4 id="location">
+                                Machakos, Kenya
+                            </h4>
+                        </div>
+                        <span id="testimonial-quote">"</span>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
+                        </p>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <img
-                        src="./images/gallery-images/pet_groomin.jpg.jpg"
-                        alt=""
-                        srcset=""
-                        class="link"
-                    >
-                    <div class="dropdown-menu">
-                        <ul class="dropdown-list">
-                            <li> numn1 groomm</li>
-                            <li> numn1</li>
-                            <li> numn1</li>
-                        </ul>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img
+                            src="./images/logos/Ellipse 23 (1).png"
+                            alt=""
+                            srcset=""
+                            class="profile-picture"
+                        >
+                        <div class="testimonial-header-text">
+                            <h4 id="name">Mulinde</h4>
+                            <h4 id="location">
+                                Machakos, Kenya
+                            </h4>
+                        </div>
+                        <span id="testimonial-quote">"</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Gallery -->
-    <section class="section" id="gallery-section">
-        <h1>Picture-Perfect-Care</h1>
-        <h1>Unveiling Our Veterinary Gallery</h1>
-        <br>
-        <div class="container" id="gallery">
-            <div class="gallery-image small-image">
-                <img src="./images/gallery-images/DSCN0989.JPG" alt="">
-            </div>
-            <div class="gallery-image two-image">
-                <img src="./images/gallery-images/Tools.jpg" alt="" srcset="">
-                <img src="./images/gallery-images/DSCN0979.JPG" alt="" srcset="">
-            </div>
-            <div class="gallery-image big-image">
-                <img src="./images/gallery-images/Eric_dog_1.jpg" alt="" srcset="">
-            </div>
-            <div class="gallery-image two-image">
-                <img src="./images/gallery-images/g6.jpg" alt="" srcset="">
-                <img src="./images/gallery-images/IMG_20230109_144613_965.jpg" alt="" srcset="">
-            </div>
-            <div class="gallery-image small-image">
-                <img src="./images/gallery-images/IMG_20230316_112119.jpg" alt="" srcset="">
-            </div>
-        </div>
-    </section>
-    <!-- Testimonials -->
-    <section class="section" id="testimonials">
-        <h1>
-            <span class="stroke"></span>
-            Who we are
-            <span class="stroke"></span>
-        </h1>
-        <div class="container">
-            <div class="testimonial">
-                <div class="testimonial-header">
-                    <img
-                        src="./images/logos/Ellipse 23 (1).png"
-                        alt=""
-                        srcset=""
-                        class="profile-picture"
-                    >
-                    <div class="testimonial-header-text">
-                        <h4 id="name">Mulinde</h4>
-                        <h4 id="location">
-                            Machakos, Kenya
-                        </h4>
+                    <div class="testimonial-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
+                        </p>
                     </div>
-                    <span id="testimonial-quote">"</span>
-                </div>
-                <div class="testimonial-text">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-header">
-                    <img
-                        src="./images/logos/Ellipse 23 (1).png"
-                        alt=""
-                        srcset=""
-                        class="profile-picture"
-                    >
-                    <div class="testimonial-header-text">
-                        <h4 id="name">Mulinde</h4>
-                        <h4 id="location">
-                            Machakos, Kenya
-                        </h4>
-                    </div>
-                    <span id="testimonial-quote">"</span>
-                </div>
-                <div class="testimonial-text">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-header">
-                    <img
-                        src="./images/logos/Ellipse 23 (1).png"
-                        alt=""
-                        srcset=""
-                        class="profile-picture"
-                    >
-                    <div class="testimonial-header-text">
-                        <h4 id="name">Mulinde</h4>
-                        <h4 id="location">
-                            Machakos, Kenya
-                        </h4>
-                    </div>
-                    <span id="testimonial-quote">"</span>
-                </div>
-                <div class="testimonial-text">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum sit officiis! Omnis delectus eaque, distinctio excepturi
-                    </p>
                 </div>
             </div>
         </section>
         <!-- Contact us  -->
         <section class="section" id="contact-section">
-            <h1>
+            <h1 class="title">
                 <span class="stroke"></span>
-                Who we are
+                Request a Call back
                 <span class="stroke"></span>
             </h1>
             <img src="./images/home-images/client-bg.jpg" alt="" srcset="">
@@ -317,7 +324,7 @@ The bond between people and animals is magical and we aim to make it even better
                     id="textarea"
                     required
                 ></textarea>
-                <button type="submit" class="form-btn" id="contact-btn">SEND</button>
+                <button type="submit" class="btn" id="contact-btn">SEND</button>
             </form>
         </section>
         <!-- Footer -->
@@ -357,7 +364,7 @@ The bond between people and animals is magical and we aim to make it even better
                                     id="footer-input"
                                     placeholder="your email"
                                 >
-                                <button type="submit" class="form-btn" id="footer-btn">SUBSCRIBE</button>
+                                <button type="submit" class="btn" id="footer-btn">SUBSCRIBE</button>
                             </form>
                         </div>
                     </div>
@@ -371,7 +378,7 @@ The bond between people and animals is magical and we aim to make it even better
                             <span></span>
                         </div>
                     </h3>
-                    <ul>
+                    <ul class="footer-links">
                         <li>
                             <a href="#home" id="">Home</a>
                         </li>
