@@ -286,7 +286,6 @@ section > .flex-container > .home-images > #image-holder > img {
   grid-auto-columns: 30%;
 
   overflow-x: auto;
-  /* overflow-y: hidden; */
   overscroll-behavior-inline: contain;
 }
 .media-scroller--with-groups {
@@ -311,7 +310,6 @@ section > .flex-container > .home-images > #image-holder > img {
   box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.2);
 }
 .media-element > img {
-  /* height: 150%; */
   border-radius: 8px;
   inline-size: 100%;
   aspect-ratio: 4 / 3;
@@ -707,7 +705,6 @@ footer > .copyright {
     margin-left: 0.5rem;
   }
   .media-scroller {
-    height: 80vh;
     grid-auto-columns: 80%;
   }
   #testimonial-section > .flex-container {
