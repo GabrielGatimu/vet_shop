@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <script src="./script.js" defer></script>
     </head>
-    <body onload="changeContent()">
+    <body>
         <!-- header -->
         <header id="navbar">
             <div class="logo">
@@ -27,7 +27,10 @@
                     srcset
                     class="logo-img"
                 >
-                <h4>My<span>-Vet</span></h4>
+                <h4>
+                    My
+                    <span>-Vet</span>
+                </h4>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -56,25 +59,25 @@
         <section class="section" id="home">
             <div class="flex-container">
                 <div class="home-text">
-                    <h3 class="title">
+                    <h3 class="title" id="home-description">
                         Unleash
                         <span class="title-span">Optimal Care:</span>
                         Where Health Meets Hooves, Paws, and Whiskers
                     </h3>
-                    <p class="text">
+                    <p class="text" id="descriptions">
                         From cats and dogs to exotic pets and farm animals,
                         we provide
                         comprehensive care for all.
                     </p>
                     <div class="home-buttons">
-                        <a href="#why-us" class="btn" >
+                        <a href="#why-us" class="btn">
                             Read More
                             <span class="icons">&#x27F6</span>
                         </a>
                         <a href="#" class="play-btn">
-                                <i class="bx bx-play"></i>
-                               <span class="small-span">Watch Our Work</span> 
-                                </a>
+                            <i class="bx bx-play"></i>
+                            <span class="small-span">Watch Our Work</span>
+                        </a>
                     </div>
                 </div>
                 <div class="home-images">
@@ -95,7 +98,6 @@
                     <div class="span-vectors" id="polygon">
                         <img src="./images/vectors/Polygon 1.svg" alt="" srcset="">
                     </div>
-
                 </div>
             </div>
             <!-- <a class="prev" onclick="changeContent(0)">❮</a>
@@ -106,76 +108,142 @@
                 <span onclick="goToSection(2)" class="dot active"></span>
             </div>
         </section>
-       
         <!-- About us -->
-        <section class="section" id="about-us">
-        <div id="us">
-            <h1 class="title">
-                Who we are
-            </h1>                 
-               
-                  <p class="text">
-                            Our team truly sets us apart because it's always personal with us. We are passionate, talented, and committed individuals ready to help you with your animal care needs.
+        <section id="about-us">
+            <div id="us">
+                <h1 class="title">
+                    Who we are
+                </h1>
+                <p class="">
+                    Our team truly sets us apart because it's always personal with us. We are passionate, talented, and committed individuals ready to help you with your animal care needs.
                             The bond between people and animals is magical and we aim to make it even better at My Vet. Your animal's health care is our top priority. Get an appointment with one of our veterinarians today.-
-                  </p >                            
-        </div>            
-        <div id="our-work">
+                </p >
+            </div>
+        </section>
+        <section class="section" id="what-wedo">
             <h1 class="title">
                 <span class="stroke"></span>
                 What we do
                 <span class="stroke"></span>
             </h1>
-            <div class="flex-container dropdown-container">
-                <div class="dropdown">
+            <div class="media-scroller snaps-inline">
+                <div class="media-element dropdown">
                     <img
-                        src="./images/gallery-images/pet_groomin.jpg.jpg"
+                        src="./images/gallery-images/DSCN0989.JPG"
                         alt=""
                         srcset=""
-                        class="link"
+                        class="image-link"
                     >
-                    <h4>Pet Grooming</h4>
+                    <h3>
+                        Pet Grooming
+                    </h3>
                     <div class="dropdown-menu">
                         <ul class="dropdown-list">
-                            <li> numn1 groomm</li>
-                            <li> numn1</li>
-                            <li> numn1</li>
+                            <li> Sanitary trimming</li>
+                            <li> Nail trimming</li>
+                            <li> Dematting</li>
+                            <li> Bathing</li>
+                            <li> Surgeries</li>
                         </ul>
                     </div>
                 </div>
-                <div class="dropdown">
+                <div class="media-element dropdown">
                     <img
-                        src="./images/gallery-images/farm_visit.jpg"
+                        src="./images/gallery-images//dairycow.jpg"
                         alt=""
                         srcset=""
-                        class="link"
+                        class="image-link"
                     >
-                    <h4>Farm Visits</h4>
+                    <h3>
+                        Farm Visits
+                    </h3>
                     <div class="dropdown-menu">
                         <ul class="dropdown-list">
-                            <li> numn1 groomm</li>
-                            <li> numn1</li>
-                            <li> numn1</li>
+                            <li>Administering medicine</li>
+                            <li>Routine checks</li>
+                            <li> Check-ups</li>
+                            <li>Surgeries</li>
                         </ul>
                     </div>
                 </div>
-                <div class="dropdown">
+                <div class="media-element dropdown">
                     <img
-                        src="./images/gallery-images/Tools.jpg"
+                        src="./images/gallery-images/Eric_dog_1.jpg"
                         alt=""
                         srcset=""
-                        class="link"
+                        class="image-link"
                     >
-                    <h4>Vaccinations</h4>
+                    <h3>
+                        Vaccination
+                    </h3>
                     <div class="dropdown-menu">
                         <ul class="dropdown-list">
-                            <li> numn1 groomm</li>
-                            <li> numn1</li>
-                            <li> numn1</li>
+                            <li> Canine vaccines</li>
+                            <li> Poultry vaccines</li>
+                            <li> Cattle vaccines</li>
+                            <li>feline vaccines</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="media-element dropdown">
+                    <img
+                        src="./images/gallery-images/DSCN0989.JPG"
+                        alt=""
+                        srcset=""
+                        class="image-link"
+                    >
+                    <h3>
+                        Pet Grooming
+                    </h3>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li> Sanitary trimming</li>
+                            <li> Nail trimming</li>
+                            <li> Dematting</li>
+                            <li> Bathing</li>
+                            <li> Surgeries</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="media-element dropdown">
+                    <img
+                        src="./images/gallery-images//dairycow.jpg"
+                        alt=""
+                        srcset=""
+                        class="image-link"
+                    >
+                    <h3>
+                        Farm Visits
+                    </h3>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li>Administering medicine</li>
+                            <li>Routine checks</li>
+                            <li> Check-ups</li>
+                            <li>Surgeries</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="media-element dropdown">
+                    <img
+                        src="./images/gallery-images/Eric_dog_1.jpg"
+                        alt=""
+                        srcset=""
+                        class="image-link"
+                    >
+                    <h3>
+                        Vaccination
+                    </h3>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li> Canine vaccines</li>
+                            <li> Poultry vaccines</li>
+                            <li> Cattle vaccines</li>
+                            <li>feline vaccines</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
         <!-- Gallery -->
         <section class="section" id="gallery-section">
@@ -403,7 +471,7 @@
                             <span></span>
                         </div>
                     </h3>
-                    <ul  class="footer-links" id="in-touch">
+                    <ul class="footer-links" id="in-touch">
                         <li>
                             <a href="#" class="fa fa-map-marker">   Nairobi, Kenya</a>
                         </li>

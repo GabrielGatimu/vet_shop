@@ -1,4 +1,4 @@
-let heading = document.getElementById('home-text');
+let heading = document.getElementsByClassName('home-text');
 let description = document.getElementById('home-description');
 let img = document.getElementById('actual-image');
 
