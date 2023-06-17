@@ -705,7 +705,7 @@ footer > .copyright {
     margin-left: 0.5rem;
   }
   .media-scroller {
-    grid-auto-columns: 80%;
+    grid-auto-columns: 90%;
   }
   #testimonial-section > .flex-container {
     flex-direction: column;
