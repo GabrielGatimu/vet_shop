@@ -54,8 +54,8 @@ const changeContent = () => {
 
 
 // --- Hamburger Menu
-const hamburger = document.querySelector(".hamburger")
-const navMenu = document.querySelector(".nav-menu")
+const hamburger = document.querySelector("#hamburger")
+const navMenu = document.querySelector("#nav-menu")
 if (hamburger != null && navMenu != null) {
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("active")
