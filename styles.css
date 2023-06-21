@@ -160,11 +160,13 @@ header {
   /* background-image: linear-gradient(to right,
       var(--bg-color),
       var(--bg-color-2)); */
-      background-image: linear-gradient(to right,
-      var(--third-color),
-      var(--third-color),
-      var(--bg-color-3),
-      var(--bg-color-2));
+  background-image: linear-gradient(
+    to right,
+    var(--third-color),
+    var(--third-color),
+    var(--bg-color-3),
+    var(--bg-color-2)
+  );
   backdrop-filter: blur(0.5px);
   z-index: 1000;
 }
@@ -202,7 +204,7 @@ header:hover {
 
 .nav-link,
 #in-touch,
-#in-touch>li>a {
+#in-touch > li > a {
   font-size: 20px;
   font-weight: 500;
   margin: 10px 20px;
@@ -259,7 +261,7 @@ header:hover {
   padding-bottom: calc(var(--spacer) + 2rem);
 }
 
-.small-section>h1 {
+.small-section > h1 {
   color: var(--main-green);
 }
 
@@ -340,18 +342,18 @@ header:hover {
   width: 47%;
 }
 
-.home-images>#image-holder {
+.home-images > #image-holder {
   height: 90vh;
   border-radius: 2% 2% 2% 45%;
   overflow: hidden;
 }
 
-.home-images>#image-holder>img,
+.home-images > #image-holder > img,
 .span-vectors {
   position: relative;
 }
 
-.home-images>#image-holder>img {
+.home-images > #image-holder > img {
   border-radius: 2% 2% 2% 45%;
   height: 100%;
   width: 100%;
@@ -404,7 +406,7 @@ header:hover {
   box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
-.media-element>img {
+.media-element > img {
   border-radius: 8px;
   inline-size: 100%;
   aspect-ratio: 16 /9;
@@ -416,7 +418,7 @@ header:hover {
   scroll-padding-inline: var(--spacer, 1rem);
 }
 
-.snaps-inline>* {
+.snaps-inline > * {
   scroll-snap-align: start;
 }
 
@@ -474,7 +476,7 @@ header:hover {
   padding: 8%;
 }
 
-.testimonial-header-text>#location {
+.testimonial-header-text > #location {
   color: var(--faded-text-color);
 }
 
@@ -493,11 +495,11 @@ header:hover {
   grid-auto-flow: column;
 }
 
-#gallery-images>.gallery-image {
+#gallery-images > .gallery-image {
   flex-basis: 20%;
 }
 
-#gallery-images>.gallery-image>img {
+#gallery-images > .gallery-image > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -505,21 +507,21 @@ header:hover {
   transition: 1s ease;
 }
 
-#gallery-images>.gallery-image>img:hover {
+#gallery-images > .gallery-image > img:hover {
   transform: scale(1.2);
 }
 
-#gallery-images>.small-image {
+#gallery-images > .small-image {
   margin-top: 20vh;
   height: 48vh;
 }
 
-#gallery-images>.two-image {
+#gallery-images > .two-image {
   flex-direction: column;
   margin: 24px 0;
 }
 
-#gallery-images>.two-image>img {
+#gallery-images > .two-image > img {
   height: 49%;
 }
 
@@ -536,7 +538,7 @@ header:hover {
   background-color: #fafbfa;
 }
 
-#contact-section>img {
+#contact-section > img {
   width: 100%;
   height: 100%;
   opacity: 0.6;
@@ -544,7 +546,7 @@ header:hover {
   mix-blend-mode: darken;
 }
 
-#contact-section>#contact-form {
+#contact-section > #contact-form {
   position: absolute;
   border-radius: 8px;
   background-color: var(--bg-color);
@@ -619,30 +621,31 @@ footer {
   margin-bottom: 20px;
 }
 
-#footer-head>#newsletter {
+#footer-head > #newsletter {
   width: 70%;
   text-align: left;
   color: var(--light-text-color);
 }
 
-#footer-head>#newsletter>#newsletter-text>h3 {
+#footer-head > #newsletter > #newsletter-text > h3 {
   width: fit-content;
   position: relative;
   font-size: var(--small-font);
   margin-bottom: 12px;
 }
 
-#newsletter-text>p {
+#newsletter-text > p {
   margin: 10px auto;
   color: var(--faded-text-color);
 }
 
-#footer-head>#newsletter>#newsletter-action>form>input {
+#footer-head > #newsletter > #newsletter-action > form > input {
   width: 300px;
+  margin: 10px;
   border-radius: 12px;
 }
 
-footer>.row {
+footer > .row {
   width: 100%;
   margin: 4px 0;
   display: flex;
@@ -650,31 +653,31 @@ footer>.row {
   justify-content: space-between;
 }
 
-footer>.row>.footer-col {
+footer > .row > .footer-col {
   flex-basis: auto;
   padding: 10px;
 }
 
-footer>.row>.footer-col>h3 {
+footer > .row > .footer-col > h3 {
   width: fit-content;
   margin: 0px 0 40px 0;
   position: relative;
 }
 
-footer>.row>.footer-col>ul>li {
+footer > .row > .footer-col > ul > li {
   margin-bottom: 10px;
 }
 
-.footer-links>li>a {
+.footer-links > li > a {
   margin-left: 0;
 }
 
 #in-touch,
-#in-touch>li>a {
+#in-touch > li > a {
   margin: 0 0 4px 0;
 }
 
-footer>.row>.footer-col>form {
+footer > .row > .footer-col > form {
   padding: 15px;
   display: flex;
   align-items: center;
@@ -683,12 +686,12 @@ footer>.row>.footer-col>form {
   margin-bottom: 50px;
 }
 
-footer>.row>.footer-col>form>.far {
+footer > .row > .footer-col > form > .far {
   font-size: var(--small-font);
   margin-right: 10px;
 }
 
-footer>.row>.footer-col>.socials>.fa {
+footer > .row > .footer-col > .socials > .fa {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -701,29 +704,29 @@ footer>.row>.footer-col>.socials>.fa {
   transition: 0.5s ease-in-out;
 }
 
-footer>.row>.footer-col>.socials>.fa:hover {
+footer > .row > .footer-col > .socials > .fa:hover {
   background: var(--light-text-color);
   color: var(--darker-text-color);
   text-decoration: underline;
 }
 
-footer>.row>.footer-col>.socials>.fa-whatsapp {
+footer > .row > .footer-col > .socials > .fa-whatsapp {
   background: var(--second-green);
 }
 
-footer>.row>.footer-col>.socials>.fa-twitter {
+footer > .row > .footer-col > .socials > .fa-twitter {
   background: rgba(60, 60, 255, 0.774);
 }
 
-footer>.row>.footer-col>.socials>.fa-facebook {
+footer > .row > .footer-col > .socials > .fa-facebook {
   background: rgb(105, 105, 211);
 }
 
-footer>.row>.footer-col>.socials>.fa-instagram {
+footer > .row > .footer-col > .socials > .fa-instagram {
   background: rgb(204, 73, 204);
 }
 
-footer>.copyright {
+footer > .copyright {
   text-align: center;
   font-size: 14px;
   opacity: 0.6;
@@ -741,7 +744,7 @@ footer>.copyright {
   margin: auto;
 }
 
-.underline-text>span {
+.underline-text > span {
   width: 18px;
   height: 100%;
   background: var(--second-green);
@@ -762,10 +765,12 @@ footer>.copyright {
 }
 
 @media (max-width: 768px) {
-  header{
-    background-image: linear-gradient(to right,
-           var(--third-color),
-      var(--bg-color-2));
+  header {
+    background-image: linear-gradient(
+      to right,
+      var(--third-color),
+      var(--bg-color-2)
+    );
   }
   header:hover {
     border-bottom-left-radius: 40px;
@@ -853,14 +858,14 @@ footer>.copyright {
     width: 82vw;
   }
 
-  #contact-section>img {
+  #contact-section > img {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
     mix-blend-mode: darken;
   }
 
-  #contact-section>#contact-form {
+  #contact-section > #contact-form {
     width: 80%;
   }
 
@@ -869,18 +874,18 @@ footer>.copyright {
     border-top-right-radius: 50px;
   }
 
-  footer>.row,
+  footer > .row,
   #footer-head {
     flex-direction: column;
     width: 100%;
     padding-left: 4%;
   }
 
-  footer>.row>#footer-head>#newsletter>#newsletter-text>h3 {
+  footer > .row > #footer-head > #newsletter > #newsletter-text > h3 {
     font-size: 20px;
   }
 
-  footer>.row>#footer-head>#newsletter>#newsletter-text>p {
+  footer > .row > #footer-head > #newsletter > #newsletter-text > p {
     text-align: left;
   }
 }
