@@ -157,10 +157,15 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2px 7%;
-  background-image: linear-gradient(to right,
+  /* background-image: linear-gradient(to right,
       var(--bg-color),
+      var(--bg-color-2)); */
+      background-image: linear-gradient(to right,
+      var(--third-color),
+      var(--third-color),
+      var(--bg-color-3),
       var(--bg-color-2));
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(0.5px);
   z-index: 1000;
 }
 
@@ -262,6 +267,7 @@ header:hover {
   padding: 1% 0 1% 7%;
   max-height: 105vh;
   overflow: hidden;
+  background-color: var(--third-color);
   /* position: relative; */
   /* added*/
 }
@@ -719,7 +725,8 @@ footer>.row>.footer-col>.socials>.fa-instagram {
 
 footer>.copyright {
   text-align: center;
-  opacity: 0.7;
+  font-size: 14px;
+  opacity: 0.6;
 }
 
 .underline-text {
@@ -755,6 +762,11 @@ footer>.copyright {
 }
 
 @media (max-width: 768px) {
+  header{
+    background-image: linear-gradient(to right,
+           var(--third-color),
+      var(--bg-color-2));
+  }
   header:hover {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
