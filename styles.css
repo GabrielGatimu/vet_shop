@@ -129,6 +129,9 @@ hr {
   border-bottom: 1px solid var(--bg-color);
   margin: 10px auto;
 }
+.slider-fade{
+  /* display: none; */
+}
 header {
   position: fixed;
   top: 0;
@@ -223,7 +226,35 @@ header:hover {
   padding: 1% 0 1% 7%;
   max-height: 105vh;
   overflow: hidden;
+  position: relative;  /* added*/
 }
+
+/* Animation */
+.fade {
+  -webkit-animation-name: fade-image;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade-image;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade-image {
+  from {
+      opacity: 0.4;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fade-image {
+  from {
+      opacity: 0.4;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
 .home-text {
   width: 52%;
   text-align: left;
