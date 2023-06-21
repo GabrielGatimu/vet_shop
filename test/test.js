@@ -1,51 +1,40 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     const slides = document.querySelectorAll(".slide");
-//     const dotsContainer = document.querySelector(".dot-indicators");
-//     let currentSlide = 0;
 
-//     function showSlide(slideIndex) {
-//         slides.forEach(function (slide) {
-//             slide.classList.remove("active");
-//         });
+var slideIndex = 0;
+showSlides(); // call showslide method
+ 
+function showSlides() {
+    var i;
+ 
+    // get the array of divs' with classname image-sliderfade
+    var slides = document.getElementsByClassName("image-sliderfade");
+ 
+    // get the array of divs' with classname dot
+    var dots = document.getElementsByClassName("dot");
+ 
+    for (i = 0; i < slides.length; i++) {
+        // initially set the display to
+        // none for every image.
+        slides[i].style.display = "none";
+    }
+ 
+    // increase by 1, Global variable
+    slideIndex++;
+ 
+    // check for boundary
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+ 
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+ 
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+ 
+    // Change image every 2 seconds
+    setTimeout(showSlides, 2000);
+}
 
-//         slides[slideIndex].classList.add("active");
-//     }
 
-//     function createDots() {
-//         slides.forEach(function (_, index) {
-//             const dot = document.createElement("div");
-//             dot.classList.add("dot");
-//             if (index === currentSlide) {
-//                 dot.classList.add("active");
-//             }
-//             dot.addEventListener("click", function () {
-//                 currentSlide = index;
-//                 showSlide(currentSlide);
-//                 updateActiveDot();
-//             });
-//             dotsContainer.appendChild(dot);
-//         });
-//     }
-
-//     function updateActiveDot() {
-//         const dots = document.querySelectorAll(".dot");
-//         dots.forEach(function (dot, index) {
-//             if (index === currentSlide) {
-//                 dot.classList.add("active");
-//             } else {
-//                 dot.classList.remove("active");
-//             }
-//         });
-//     }
-
-//     function nextSlide() {
-//         currentSlide = (currentSlide + 1) % slides.length;
-//         showSlide(currentSlide);
-//         updateActiveDot();
-//     }
-
-//     createDots();
-//     showSlide(currentSlide);
-//     setInterval(nextSlide, 5000);
-// });
 
