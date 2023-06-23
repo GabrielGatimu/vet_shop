@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -781,6 +779,9 @@ footer > .copyright {
     min-height: auto;
     padding-bottom: calc(var(--spacer) + 2rem);
   }
+  #home-section{
+    padding-left: 0;
+  }
 
   #home-container {
     flex-direction: column;
@@ -794,12 +795,15 @@ footer > .copyright {
 
   .home-text {
     position: absolute;
-    padding-right: 1%;
+    padding-left: 3%;
     padding-top: 50%;
     z-index: 1;
   }
+  .home-text > #home-description{
+    font-size: calc(var(--heading-font) - .25rem);
+  }
 
-  .home-images {
+  #image-holder {
     opacity: 0.2;
   }
 
@@ -826,18 +830,17 @@ footer > .copyright {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: var(--third-color);
-    width: 100%;
+     background-color: var(--main-green);
+    width: 98%;
+    margin-top: var(--spacer);
     min-height: 50vh;
-    border-radius: 120px;
+    border-radius: 100px;
     text-align: center;
     transition: 0.3s;
   }
-
-  #nav-menu.active {
-    right: 0;
+  .nav-item{
+    color: var(--light-text-color);
   }
-
   .media-scroller {
     grid-auto-columns: 93%;
     margin-top: 2rem;
