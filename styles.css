@@ -12,21 +12,17 @@
 }
 
 :root {
-  --white-2: #fcffff;
-  --white-color: #fcfcfd;
   --bg-color: #ffffff;
   --bg-color-2: rgba(255, 255, 255, 0.8);
-  --bg-color-3: #f2f2f2;
   --third-color: #eee8a9;
   --fourth-color: #f3efc7;
-  --fescii-white: #fafcff;
   --text-color: black;
   --darker-text-color: #111111;
   --faded-text-color: #4d5052;
-  --footer-black: #16191c;
   --light-text-color: white;
   --main-green: rgb(0, 98, 87);
   --second-green: #05af60;
+  --third-green: #38A225;
   --heading-font: 2.25rem;
   --big-font: 5rem;
   --medium-font: 2rem;
@@ -153,14 +149,11 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2px 7%;
-  /* background-image: linear-gradient(to right,
-      var(--bg-color),
-      var(--bg-color-2)); */
   background-image: linear-gradient(
     to right,
     var(--third-color),
     var(--third-color),
-    var(--bg-color-3),
+    var(--bg-color-2),
     var(--bg-color-2)
   );
   backdrop-filter: blur(0.5px);
@@ -246,7 +239,6 @@ header:hover {
   padding: 1% 7%;
   margin-bottom: 20px;
 }
-
 .section {
   min-height: 100vh;
   background-color: white;
@@ -266,38 +258,45 @@ header:hover {
   max-height: 105vh;
   overflow: hidden;
   background-color: var(--third-color);
-  /* position: relative; */
-  /* added*/
 }
-
 /* Animation */
-.fade {
-  -webkit-animation-name: fade-image;
-  -webkit-animation-duration: 2s;
-  animation-name: fade-image;
-  animation-duration: 2s;
+.fade{
+  -webkit-animation: fade_animation 2s ease-out, move_animation 2s ease-in-out;
+  animation: fade_animation 2.5s ease-out, move_animation 2s ease-in-out; 
+}
+@-webkit-keyframes move_animation{
+  0%{
+  transform: translateY(30%);
+  }
+   100%{
+    transform: translateY(0);
+  }
+}
+@keyframes move_animation{
+  0%{
+  transform: translateY(30%) scale(.9);
+  }
+   100%{
+    transform: translateY(0);
+  }
 }
 
-@-webkit-keyframes fade-image {
+@-webkit-keyframes fade_animation {
   from {
-    opacity: 0.5;
+    opacity: 0.4;
   }
-
   to {
     opacity: 1;
   }
 }
-
-@keyframes fade-image {
+@keyframes fade_animation {
   from {
-    opacity: 0.5;
+    opacity: 0.4;
   }
-
   to {
     opacity: 1;
   }
 }
-
 .home-text {
   width: 52%;
   text-align: left;
@@ -338,6 +337,7 @@ header:hover {
   height: 90vh;
   border-radius: 2% 2% 2% 45%;
   overflow: hidden;
+  box-shadow: 22px 21px 33px 0px var(--third-green) ;
 }
 
 .home-images > #image-holder > img,
@@ -450,6 +450,10 @@ header:hover {
   text-align: left;
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
   padding: 1% 1% 3% 2%;
+  word-wrap: normal;
+}
+.testimonial-header{
+  justify-content: space-between;
 }
 
 .profile-picture {
@@ -458,15 +462,13 @@ header:hover {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  margin: 4px;
-  margin-right: 12px;
+  margin-top: 4px;
 }
 
 #testimonial-quote {
   font-size: 5rem;
   color: var(--second-green);
 }
-
 .testimonial-header-text {
   padding: 8%;
 }
@@ -693,7 +695,7 @@ footer > .row > .footer-col > .socials > .fa {
   line-height: 40px;
   font-size: var(--small-font);
   color: var(--light-text-color);
-  background: var(--bg-color-3);
+  background: var(--bg-color-2);
   margin-right: 5px;
   transition: 0.5s ease-in-out;
 }
@@ -845,7 +847,6 @@ footer > .copyright {
     grid-auto-columns: 93%;
     margin-top: 2rem;
   }
-
   #gallery-images {
     grid-auto-flow: column;
     gap: 20px;
