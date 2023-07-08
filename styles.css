@@ -261,23 +261,23 @@ header:hover {
 }
 /* Animation */
 .fade{
-  -webkit-animation: fade_animation 2s ease-out, move_animation 2s ease-in-out;
-  animation: fade_animation 2.5s ease-out, move_animation 2s ease-in-out; 
+  -webkit-animation: fade_animation 2s ease-out, move_animation 1s ease;
+  animation: fade_animation 2.5s ease-out, move_animation 1s ease; 
 }
 @-webkit-keyframes move_animation{
   0%{
-  transform: translateY(30%);
+  transform: translateX(30%);
   }
    100%{
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 @keyframes move_animation{
   0%{
-  transform: translateY(30%) scale(.9);
+  transform: translateX(50%);
   }
    100%{
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
